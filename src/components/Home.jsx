@@ -46,7 +46,6 @@ export default function Home() {
     <>    
       <NavItem totalItems={totalItems}  />
       <Banner />
-      <h2>Welcome, {currentUser.displayName}!</h2>
       <Categories />
       <NewArrival onBuyNow={handleBuyNow} cartItems={cartItems} />
       <TopProduct />
