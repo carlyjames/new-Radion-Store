@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+@font-face {
+  font-family: 'header';
+  src: url('../components/Banner/sliders/SEASRN__.ttf');
+  /* src: url('../components/Banner/sliders/Pirou-Regular.otf'); */
+}
+
+.banner{
+  height: 100vh;
+  width: 100%;
+
+  background: url('../components/Banner/sliders/1.png') center/cover;
+  
+}
+
+.slide-container{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.slide-holder{
+  height: 100vh;
+  /* width: 100%; */
+  
+}
+.first-slide-holder{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.first-slide-holder .wine-bottle{
+  height: 600px;
+  width: 100%;
+  padding  : 4rem;
+  /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+  filter: drop-shadow(30px 10px 4px rgba(17, 17, 17, 0.429));
+  background: url('../components/Banner/sliders/wineBottle2.png') center/cover;
+}
+.second-slide-holder .wine-bottle{
+  height: 600px;
+  width: 100%;
+  padding  : 4rem;
+  position: absolute;
+  /* transform: translate(200px, 200px); */
+  
+  z-index: -999;
+  /* filter: drop-shadow(30px 10px 4px rgba(17, 17, 17, 0.429)); */
+  background: url('../components/Banner/sliders/wineBottle4.png') center/cover;
+}
+
+.slide-caption{
+  max-width: 600px;
+  height: 500px;
+  display: flex;
+  text-align: left;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  color: #c69c6d;
+  
+}
+.slide-caption h1{
+  font-family: 'header';
+  font-size: 70px;
+  font-weight: 700;
+}
+.slider-caption{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+.slider-btn{
+  font-size: 15px !important;
+  color: white !important;
+  border: 1px solid #c69c6d !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+.slider-btn .btn-overlay{
+  position: absolute;
+  height: 0%;
+  width: 100%;
+  background: red;
+  border-radius: .2rem;
+  bottom: 0;
+}
+
+
+/* second slider */
+.second-slide-holder{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.second-slide-caption{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  /* border: 2px solid green; */
+  
+}
+.second-slide-caption h1{
+  font-size: 70px;
+}
+
+/* third slide */
+.third-slide-container{
+}
+
+.third-slide-holder{
+  /* border: 2px solid green; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.third-slide-holder .wine-bottle{
+  height: 100vh;
+  width: 200px;
+  padding  : 4rem;
+  /* position: absolute; */
+  transform: translate(200px, 0px);
+  bottom: 0;
+  /* border: 2px solid green; */
+  z-index: -999;
+  /* filter: drop-shadow(30px 10px 4px rgba(17, 17, 17, 0.429)); */
+  /* background: url('../components/Banner/sliders/wineBottle6.png') center/cover; */
+}
+
+.third-slide-holder .wine-bottle img{
+  height: 1400px;
+  width: 1004px;
+  object-fit: cover;
+}
+
+
+
+@media (max-width : 600px) {
+  .slide-caption h1{
+    font-family: 'header';
+    font-size: 60px;
+    font-weight: 500;
+  }
+  .first-slide-caption{
+    transform: translateX(-30px);
+  }
+}
+
+
+/* categories slider */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+

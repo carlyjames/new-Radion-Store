@@ -1,0 +1,8 @@
+.topProductImage{
+    height: 400px;
+    width: 300px;
+    position: absolute;
+    right: 13rem;
+    transform: translateY(4rem);
+    background: url(./scream.png) center/cover;
+}
